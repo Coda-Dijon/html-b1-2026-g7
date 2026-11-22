@@ -2,6 +2,10 @@
 
 Template de site HTML dans le cadre du cours des B1 2026
 
+## Mesure
+
+Speedlify : https://speedlify-b1-2026-coda.baldir.fr/group/html-b1-2026-g7/
+
 ## Documentation
 
 - [Activation du site via Github Pages](docs/Github-Pages.md)

@@ -1,11 +1,18 @@
-# Template de site statique HTML
+# Projet HTML du groupe 7
 
-Template de site HTML dans le cadre du cours des B1 2026
+Membres du groupe :
+
+- A
+- B
+- C
+- D
+
+[Consignes](CONSIGNES.md)
 
 ## Déploiement
 
 Le site est déployé automatiquement sur github pages.
-Le code est légèrement modifié (les noms de certains fichiers)
+Le code est légèrement modifié (les noms de certains fichiers).
 
 Si après avoir déployé, le site ne change pas, forcer le rafraichissement (ou désactivez le cache dans les devtools).
 

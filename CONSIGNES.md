@@ -37,41 +37,41 @@
 | P4                |                1 | Liens de référence           | Le site contient un lien vers la page Speedlify du projet et un lien de validation W3C pour chaque page. | Cliquer sur chaque lien et vérifier qu'il mène à la bonne page ou au bon résultat de validation.               |
 | P5                |                1 | Navigation cohérente         | Toutes les pages partagent une navigation commune avec les mêmes liens vers les autres pages.            | Ouvrir chaque page et vérifier que la navigation est présente et que les liens mènent aux bonnes destinations. |
 
-### Images (4 points)
+### Images (3 points)
 
-| Numéro de critère | Nombre de points | Nom                          | Description                                                                                                     | Comment vérifier                                                                                  |
-|-------------------|-----------------:|------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| I1                |                1 | Images pertinentes           | Le site utilise au moins trois images en rapport avec son contenu.                                              | Compter les images et vérifier que chacune est pertinente par rapport à la page où elle apparaît. |
-| I2                |                1 | Images hébergées sur le site | Les images sont hébergées avec le projet et référencées par un chemin absolu depuis la racine du site (`/...`). | Vérifier que chaque image se charge depuis le projet, et non depuis un site tiers.                |
-| I3                |                2 | Alternatives textuelles      | Chaque image possède un texte alternatif pertinent ou une alternative vide si elle est décorative.              | Inspecter l’attribut `alt` de chaque image et vérifier qu’il correspond à son rôle.               |
+| Critère                      | Max. | Niveau (0-4) | Points | Observations |
+|------------------------------|------|--------------|--------|--------------|
+| I1 — Images pertinentes      | 1    |              |        |              |
+| I2 — Alternatives textuelles | 2    |              |        |              |
 
 ### Structure et sémantique (5 points)
 
-| Numéro de critère | Nombre de points | Nom                         | Description                                                                                       | Comment vérifier                                                                                                                       |
-|-------------------|-----------------:|-----------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| S1                |                1 | Régions de page (landmarks) | Les principales zones de chaque page sont délimitées par des régions adaptées.                    | Vérifier la présence et l’usage approprié des régions telles que `header`, `nav`, `main` et `footer`, selon le contenu de chaque page. |
-| S2                |                1 | Balises sémantiques         | Les éléments HTML choisis correspondent à leur rôle dans le contenu.                              | Parcourir le HTML et vérifier que les éléments sémantiques sont employés à la place de balises génériques lorsqu’ils conviennent.      |
-| S3                |                1 | Hiérarchie des titres       | Les titres suivent une hiérarchie cohérente, sans niveau sauté.                                   | Examiner les titres de chaque page, dans l’ordre, et vérifier que leur niveau reflète la structure du contenu.                         |
-| S4                |                1 | Noms des liens              | Le texte de chaque lien permet d’en comprendre la destination ou l’action.                        | Lire les liens hors contexte visuel et vérifier qu’aucun nom vague, comme « cliquez ici », n’est utilisé seul.                         |
-| S5                |                1 | Sections sémantiques        | Le site utilise `section`, `article` ou `aside` de manière pertinente pour structurer le contenu. | Parcourir le HTML et vérifier que ces balises sont utilisées là où elles correspondent au rôle du contenu.                             |
+| Critère                          | Max. | Niveau (0-4) | Points | Observations |
+|----------------------------------|------|--------------|--------|--------------|
+| S1 — Régions de page (landmarks) | 1    |              |        |              |
+| S2 — Balises sémantiques         | 1    |              |        |              |
+| S3 — Hiérarchie des titres       | 1    |              |        |              |
+| S4 — Noms des liens              | 1    |              |        |              |
+| S5 — Sections sémantiques        | 1    |              |        |              |
 
 ### Style et mise en page (9 points)
 
-| Numéro de critère | Nombre de points | Nom                  | Description                                                                                                                               | Comment vérifier                                                                                                                         |
-|-------------------|-----------------:|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| M1                |                5 | Flexbox ou Grid      | La mise en page utilise Flexbox ou CSS Grid pour structurer au moins une section principale du site.                                      | Rechercher `display: flex` ou `display: grid` dans le CSS et vérifier que l'un des deux est utilisé pour organiser le contenu principal. |
-| M2                |                1 | Sélecteurs variés    | Le CSS utilise différents types de sélecteurs (classe, ID, descendant, enfant, adjacent, etc.) plutôt que des sélecteurs trop génériques. | Examiner le CSS et vérifier que plusieurs types de sélecteurs sont utilisés de manière pertinente.                                       |
-| M3                |                1 | Combinateurs         | Le CSS utilise au moins un combinateur (descendant, enfant direct `>`, adjacent `+`, général `~`) de manière pertinente.                  | Rechercher les combinateurs dans le CSS et vérifier leur usage.                                                                          |
-| M4                |                1 | Sélecteur d’attribut | Le CSS utilise au moins un sélecteur d’attribut (ex: `[class*="..."]`, `[href^="http"]`) de manière pertinente.                           | Rechercher les sélecteurs d’attribut dans le CSS et vérifier leur usage.                                                                 |
-| M5                |                1 | Variables CSS        | Le CSS utilise des variables CSS (custom properties) pour les valeurs réutilisées comme les couleurs, polices, etc.                       | Rechercher `--` dans le CSS et vérifier que des variables sont définies et utilisées.                                                    |
+| Critère                   | Max. | Niveau (0-4) | Points | Observations |
+|---------------------------|------|--------------|--------|--------------|
+| M1 — Flexbox ou Grid      | 5    |              |        |              |
+| M2 — Sélecteurs variés    | 1    |              |        |              |
+| M3 — Combinateurs         | 1    |              |        |              |
+| M4 — Sélecteur d'attribut | 1    |              |        |              |
+| M5 — Variables CSS        | 1    |              |        |              |
 
-### Accessibilité et affichage adaptatif (9 points)
+### Accessibilité et affichage adaptatif (10 points)
 
-| Numéro de critère | Nombre de points | Nom                     | Description                                                                                                                                                                        | Comment vérifier                                                                                                                                               |
-|-------------------|-----------------:|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A1                |                4 | Responsive et adaptatif | Le contenu s’adapte aux différentes largeurs d’écran sans perte d’information, s’affiche correctement à 350 × 650 px sans défilement horizontal et reste utilisable au zoom 200 %. | Tester les pages sur petit et grand écran, à 350 × 650 px et au zoom 200 %, et vérifier que tout le contenu et toutes les fonctionnalités restent accessibles. |
-| A2                |                3 | Media queries           | Le CSS utilise des media queries pour adapter la mise en page à différentes largeurs d'écran.                                                                                      | Rechercher `@media` dans le CSS et vérifier qu'au moins une media query est présente et fonctionnelle.                                                         |
-| A3                |                2 | Approche mobile first   | Le CSS prévoit d’abord une mise en page pour petit écran, puis des adaptations pour les écrans plus larges.                                                                        | Examiner la feuille CSS et vérifier que les règles de base ciblent les petits écrans et que les adaptations plus larges sont ajoutées ensuite.                 |
+| Critère                      | Max. | Niveau (0-4) | Points | Observations |
+|------------------------------|------|--------------|--------|--------------|
+| A1 — Responsive et adaptatif | 4    |              |        |              |
+| A2 — Media queries           | 3    |              |        |              |
+| A3 — Approche mobile first   | 2    |              |        |              |
+| A4 — Lisibilité des couleurs | 1    |              |        |              |
 
 ### Éco-conception (3 points)
 

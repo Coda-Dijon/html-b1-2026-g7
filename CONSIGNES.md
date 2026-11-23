@@ -1,113 +1,111 @@
-## Barème général
+# Projets de groupe
 
-Le total est sur 100 points : A (40) + B2 (35) + B1 (25). Pour convertir la note finale sur 20, diviser le total par 5.
+- **Durée** : 4 jours
+- **Groupes** : 3-4 personnes
+- **Evaluation** :
+    - 40% : Livrables
+    - 35% : Démo groupe: capacité du groupe à expliquer ses choix et son code
+    - 25% : Individuel : questions solo et challenges individuels
 
-L’idée centrale pour B : **on évalue ce que les apprenants comprennent et savent faire au terme du parcours, ainsi que leur capacité à progresser — pas l’absence d’erreurs pendant le développement.**
+## Déroulé
 
-## A — Évaluation du site livré : 40 points
+| Jour            | Plage horaire | Activité                                                    |
+|-----------------|---------------|-------------------------------------------------------------|
+| Lundi 23 nov    | Après-midi    | Composition des groupes, logistique Git, inspiration sujets |
+| Mardi 24 nov    | Journée       | Présentation du projet, barème, début du travail (Jour 1)   |
+| Mercredi 25 nov | Journée       | Démos, travail en groupe (Jour 2)                           |
+| Jeudi 26 nov    | Journée       | Démos, finalisation, préparation soutenance (Jour 3)        |
+| Vendredi 27 nov | Journée       | Dernières démos, soutenances, évaluation (Jour 4)           |
 
-Pour chaque critère, attribuer un niveau de 0 à 4, puis calculer : **points obtenus = maximum du critère × niveau ÷ 4**. Des demi-points peuvent être utilisés.
+## Livrable (40% de la note totale)
 
-Voir `CONSIGNES.md` pour la liste complète des 23 critères organisés en 7 sections :
+**Repères de niveau**
 
-| Section | Max. | Critères |
-|---------|-----:|----------|
-| **Pages et contenus** | 5 | P1–P5 |
-| **Images** | 4 | I1–I3 |
-| **Structure et sémantique** | 5 | S1–S5 |
-| **Style et mise en page** | 9 | M1–M5 |
-| **Accessibilité et affichage adaptatif** | 9 | A1–A3 |
-| **Éco-conception** | 3 | E1 |
-| **Mesure et qualité** | 5 | Q1–Q3 |
-| **JavaScript (pénalité)** | –2 | J1 |
-| **Total A** | **40** | |
-
-**Repères de niveau communs**
-
-- **0 — Absent ou inutilisable :** le critère n’est pas présent, ou ne peut pas être évalué parce qu’il ne fonctionne pas.
+- **0 — Absent ou inutilisable :** le critère n'est pas présent, ou ne peut pas être évalué parce qu'il ne fonctionne pas.
 - **1 — Très incomplet :** quelques éléments sont en place, mais le critère est majoritairement non satisfait.
 - **2 — Partiel :** résultat compréhensible, mais avec des lacunes visibles ou des incohérences.
 - **3 — Attendu atteint :** résultat fonctionnel et approprié pour le niveau du cours.
-- **4 — Solide :** résultat particulièrement cohérent, soigné ou robuste ; les détails renforcent l’expérience sans être indispensables.
+- **4 — Solide :** résultat particulièrement cohérent, soigné ou robuste ; les détails renforcent l'expérience sans être indispensables.
 
-Une erreur isolée ne fait pas tomber automatiquement tout un critère au niveau 0 ou 1 .
-Le résultat est jugé dans son ensemble et la gravité de l’impact sur l’usage.
+### Pages et contenus (5 points)
 
-## B — Démos
+| Numéro de critère | Nombre de points | Nom                          | Description                                                                                              | Comment vérifier                                                                                               |
+|-------------------|-----------------:|------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| P1                |                1 | Nombre de pages              | Le site comporte au moins trois pages distinctes et pertinentes.                                         | Ouvrir la navigation et vérifier que trois pages différentes sont accessibles.                                 |
+| P2                |                1 | Page d’accueil               | Le site comprend une page d’accueil identifiable.                                                        | Vérifier qu’une page d’accueil est présente et accessible depuis la navigation.                                |
+| P3                |                1 | Crédits du groupe et membres | Une page de présentation indique le nom du groupe et de ses membres.                                     | Vérifier que le nom du groupe et des membres apparaît sur une page du site.                                    |
+| P4                |                1 | Liens de référence           | Le site contient un lien vers la page Speedlify du projet et un lien de validation W3C pour chaque page. | Cliquer sur chaque lien et vérifier qu'il mène à la bonne page ou au bon résultat de validation.               |
+| P5                |                1 | Navigation cohérente         | Toutes les pages partagent une navigation commune avec les mêmes liens vers les autres pages.            | Ouvrir chaque page et vérifier que la navigation est présente et que les liens mènent aux bonnes destinations. |
 
-### Cadence recommandée
+### Images (4 points)
 
-**Une démonstration évaluée par groupe chaque jour**.
+| Numéro de critère | Nombre de points | Nom                          | Description                                                                                                     | Comment vérifier                                                                                  |
+|-------------------|-----------------:|------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| I1                |                1 | Images pertinentes           | Le site utilise au moins trois images en rapport avec son contenu.                                              | Compter les images et vérifier que chacune est pertinente par rapport à la page où elle apparaît. |
+| I2                |                1 | Images hébergées sur le site | Les images sont hébergées avec le projet et référencées par un chemin absolu depuis la racine du site (`/...`). | Vérifier que chaque image se charge depuis le projet, et non depuis un site tiers.                |
+| I3                |                2 | Alternatives textuelles      | Chaque image possède un texte alternatif pertinent ou une alternative vide si elle est décorative.              | Inspecter l’attribut `alt` de chaque image et vérifier qu’il correspond à son rôle.               |
 
-Le groupe peut solliciter une deuxième démo pour montrer une évolution ou donner un retour intermédiaire.
+### Structure et sémantique (5 points)
 
-Pour chaque groupe, compter environ **8 minutes** :
+| Numéro de critère | Nombre de points | Nom                         | Description                                                                                       | Comment vérifier                                                                                                                       |
+|-------------------|-----------------:|-----------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| S1                |                1 | Régions de page (landmarks) | Les principales zones de chaque page sont délimitées par des régions adaptées.                    | Vérifier la présence et l’usage approprié des régions telles que `header`, `nav`, `main` et `footer`, selon le contenu de chaque page. |
+| S2                |                1 | Balises sémantiques         | Les éléments HTML choisis correspondent à leur rôle dans le contenu.                              | Parcourir le HTML et vérifier que les éléments sémantiques sont employés à la place de balises génériques lorsqu’ils conviennent.      |
+| S3                |                1 | Hiérarchie des titres       | Les titres suivent une hiérarchie cohérente, sans niveau sauté.                                   | Examiner les titres de chaque page, dans l’ordre, et vérifier que leur niveau reflète la structure du contenu.                         |
+| S4                |                1 | Noms des liens              | Le texte de chaque lien permet d’en comprendre la destination ou l’action.                        | Lire les liens hors contexte visuel et vérifier qu’aucun nom vague, comme « cliquez ici », n’est utilisé seul.                         |
+| S5                |                1 | Sections sémantiques        | Le site utilise `section`, `article` ou `aside` de manière pertinente pour structurer le contenu. | Parcourir le HTML et vérifier que ces balises sont utilisées là où elles correspondent au rôle du contenu.                             |
 
-1. **1 minute — État du projet :** ce qui est présent ou a changé depuis la dernière démo.
-2. **2 minutes — Démonstration :** montrer une partie fonctionnelle du site.
-3. **2 minutes — Choix techniques :** expliquer une décision HTML, CSS, responsive ou autre, et son intérêt.
-4. **2 minutes — Question individuelle :** répondre à une question courte liée au cours.
-5. **1 minute — Problème et vérification :** décrire une erreur, une limite ou un point à améliorer, puis expliquer comment le corriger ou le vérifier.
+### Style et mise en page (9 points)
 
-La démonstration peut être adaptée si un projet ne dispose pas encore de la fonctionnalité montrée : les apprenants peuvent expliquer ce qu’ils testent, ce qu’ils observent et la suite envisagée.
+| Numéro de critère | Nombre de points | Nom                  | Description                                                                                                                               | Comment vérifier                                                                                                                         |
+|-------------------|-----------------:|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| M1                |                5 | Flexbox ou Grid      | La mise en page utilise Flexbox ou CSS Grid pour structurer au moins une section principale du site.                                      | Rechercher `display: flex` ou `display: grid` dans le CSS et vérifier que l'un des deux est utilisé pour organiser le contenu principal. |
+| M2                |                1 | Sélecteurs variés    | Le CSS utilise différents types de sélecteurs (classe, ID, descendant, enfant, adjacent, etc.) plutôt que des sélecteurs trop génériques. | Examiner le CSS et vérifier que plusieurs types de sélecteurs sont utilisés de manière pertinente.                                       |
+| M3                |                1 | Combinateurs         | Le CSS utilise au moins un combinateur (descendant, enfant direct `>`, adjacent `+`, général `~`) de manière pertinente.                  | Rechercher les combinateurs dans le CSS et vérifier leur usage.                                                                          |
+| M4                |                1 | Sélecteur d’attribut | Le CSS utilise au moins un sélecteur d’attribut (ex: `[class*="..."]`, `[href^="http"]`) de manière pertinente.                           | Rechercher les sélecteurs d’attribut dans le CSS et vérifier leur usage.                                                                 |
+| M5                |                1 | Variables CSS        | Le CSS utilise des variables CSS (custom properties) pour les valeurs réutilisées comme les couleurs, polices, etc.                       | Rechercher `--` dans le CSS et vérifier que des variables sont définies et utilisées.                                                    |
 
-### Garantir une évaluation individuelle équitable
+### Accessibilité et affichage adaptatif (9 points)
 
-- Faire tourner la personne qui présente l’état d’avancement.
-- Poser à chaque apprenant **au moins deux questions individuelles évaluées pendant les cinq jours** ; trois si le temps le permet.
-- Noter séparément les réponses individuelles : la bonne réponse d’un coéquipier ne vaut pas comme preuve de maîtrise individuelle.
-- Poser des questions de difficulté et de portée comparables à tous.
-- Évaluer la clarté du raisonnement et la compréhension, pas l’aisance à parler en public.
+| Numéro de critère | Nombre de points | Nom                     | Description                                                                                                                                                                        | Comment vérifier                                                                                                                                               |
+|-------------------|-----------------:|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A1                |                4 | Responsive et adaptatif | Le contenu s’adapte aux différentes largeurs d’écran sans perte d’information, s’affiche correctement à 350 × 650 px sans défilement horizontal et reste utilisable au zoom 200 %. | Tester les pages sur petit et grand écran, à 350 × 650 px et au zoom 200 %, et vérifier que tout le contenu et toutes les fonctionnalités restent accessibles. |
+| A2                |                3 | Media queries           | Le CSS utilise des media queries pour adapter la mise en page à différentes largeurs d'écran.                                                                                      | Rechercher `@media` dans le CSS et vérifier qu'au moins une media query est présente et fonctionnelle.                                                         |
+| A3                |                2 | Approche mobile first   | Le CSS prévoit d’abord une mise en page pour petit écran, puis des adaptations pour les écrans plus larges.                                                                        | Examiner la feuille CSS et vérifier que les règles de base ciblent les petits écrans et que les adaptations plus larges sont ajoutées ensuite.                 |
 
-Exemples de questions comparables :
+### Éco-conception (3 points)
 
-- « Pourquoi avoir choisi cet élément HTML ? »
-- « Quelle différence entre cette classe et un identifiant dans votre cas ? »
-- « Comment cette mise en page change-t-elle sur petit écran ? »
-- « Comment vérifier que ce champ est compréhensible au clavier ? »
-- « Que regarderiez-vous si cette règle CSS ne s’appliquait pas ? »
-- « Quelle solution permettrait de faire cela sans JavaScript ? »
+| Numéro de critère | Nombre de points | Nom               | Description                                                                                              | Comment vérifier                                                                                                                                            |
+|-------------------|-----------------:|-------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| E1                |                3 | Images optimisées | Le format, le poids et les dimensions des images sont adaptés à leur usage et à leur taille d’affichage. | Vérifier les fichiers et leur affichage : chaque image doit utiliser un format adapté, avoir des dimensions raisonnables et ne pas être inutilement lourde. |
 
-### B2 — Résultat collectif des démonstrations : 35 points
+L’utilisation de `<picture>` ou de `srcset` peut être proposée comme amélioration facultative, sans incidence sur le score.
 
-Évaluer une seule fois pour le groupe, à partir des démonstrations et de l’évolution du projet. La qualité de présentation n’est pas une compétition : une équipe n’est pas mieux notée uniquement parce qu’elle parle avec plus d’assurance.
+### Mesure et qualité (5 points)
 
-| Critère collectif                                 |   Max. | Ce qui est observé                                                                                                                                                       |
-|---------------------------------------------------|-------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Fonctionnalité montrée et évolution du projet** |      8 | Le groupe sait montrer ce qui est effectivement réalisé et expliquer où cela s’inscrit dans le projet.                                                                   |
-| **Explication des choix**                         |      8 | Les décisions de structure, de styles ou de mise en page sont compréhensibles et reliées aux besoins du site.                                                            |
-| **Compréhension des concepts du cours**           |      6 | Les explications mobilisent correctement les notions étudiées, même avec des formulations simples.                                                                       |
-| **Diagnostic et correction**                      |      6 | Le groupe sait examiner un problème, essayer une correction adaptée et expliquer ce qu’il vérifie ensuite.                                                               |
-| **Progression entre les démos**                   |      7 | Le groupe réutilise les retours, affine son travail ou améliore sa méthode. Une amélioration peut être une correction, une vérification ou une décision mieux justifiée. |
-| **Total B2**                                      | **35** |                                                                                                                                                                          |
+| Numéro de critère | Nombre de points | Nom                       | Description                                                                           | Comment vérifier                                                                            |
+|-------------------|-----------------:|---------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Q1                |                3 | Validation HTML           | Toutes les pages sont vérifiées avec le validateur W3C et ne comportent pas d’erreur. | Consulter le résultat du validateur pour chaque page : aucune erreur ne doit être signalée. |
+| Q2                |                1 | Liens fonctionnels        | Le site ne contient pas de lien mort.                                                 | Cliquer sur chaque lien interne et externe et vérifier que sa destination fonctionne.       |
+| Q3                |                1 | Feuille de style partagée | Une même feuille de style CSS est réutilisée sur toutes les pages.                    | Vérifier que chaque page référence le fichier CSS commun du projet.                         |
 
-### B1 — Maîtrise individuelle : 25 points
+### JavaScript (pénalité)
 
-Attribuer les points à partir des questions individuelles, des explications données pendant les démos et des corrections auxquelles la personne a contribué.
+| Numéro de critère | Pénalité | Nom                       | Description                                                                                            | Comment vérifier                                                                          |
+|-------------------|---------:|---------------------------|--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| J1                |       -2 | Utilisation de JavaScript | Pénalité de 2 points si le projet utilise du JavaScript, sauf si cela a été suggéré par le professeur. | Vérifier la présence de fichiers JavaScript ou de code JavaScript intégré dans les pages. |
 
-| Critère individuel                           |   Max. | Ce qui est observé                                                                                       |
-|----------------------------------------------|-------:|----------------------------------------------------------------------------------------------------------|
-| **Expliquer un choix réalisé par le groupe** |      7 | La personne explique le choix, son rôle et son effet sur le site.                                        |
-| **Mobiliser un concept du cours**            |      5 | Elle utilise ou explique correctement une notion pertinente de HTML, CSS, mise en page ou accessibilité. |
-| **Analyser et corriger un problème**         |      5 | Elle formule une hypothèse, essaie une correction et vérifie le résultat, avec ou sans aide.             |
-| **Contribution et progression personnelle**  |      3 | Elle peut décrire sa contribution et montrer ce qu’elle a appris ou amélioré.                            |
-| **Progression individuelle**                 |      5 | Elle réutilise les retours, affine sa compréhension ou adopte une meilleure méthode de vérification.     |
-| **Total B1**                                 | **25** |                                                                                                          |
+## Démos en groupe (35% de la note totale)
 
-### Évaluer une correction sans pénaliser l’erreur
+Les démos ont lieu chaque jour de projet, y compris le dernier jour sous forme
+de soutenance. Chaque groupe présente son avancement, explique ses choix
+techniques et répond aux questions du professeur. L'évaluation porte sur
+l'ensemble des démos, pas sur une seule.
 
-Pendant une démonstration, observer la démarche plutôt que le fait que le code ait été parfait dès le départ :
+Le dernier jour, la soutenance (10 min par groupe) compte comme la dernière démo
+et est évaluée avec les mêmes critères D1–D5.
 
-- **Repérer :** la personne constate ou comprend le problème.
-- **Expliquer :** elle propose une cause plausible.
-- **Essayer :** elle modifie ou teste quelque chose de pertinent.
-- **Vérifier :** elle constate si le résultat attendu est obtenu.
-
-Une erreur remarquée et corrigée peut donc fournir une **preuve positive d’apprentissage**. Si le problème n’est pas encore résolu, la personne peut tout de même montrer sa compréhension en expliquant la cause probable, le test suivant et le résultat qu’elle cherche à obtenir.
-
-### Barème de prise de notes pour B
-
-Pour chacun des critères, utiliser la même échelle de **0 à 4**, puis calculer : **points obtenus = maximum du critère × niveau ÷ 4**.
+**Repères de niveau**
 
 - **0 — Pas de preuve observée**
 - **1 — Compréhension très fragile, même avec aide**
@@ -115,6 +113,37 @@ Pour chacun des critères, utiliser la même échelle de **0 à 4**, puis calcul
 - **3 — Réponse ou démarche appropriée de façon autonome**
 - **4 — Explication claire, raisonnement solide ou transfert pertinent à une autre situation**
 
-Pour la progression, ne pas comparer les apprenants entre eux et ne pas calculer une simple différence entre leur première et leur dernière prestation. Noter plutôt les signes concrets d’évolution : retour pris en compte, diagnostic plus structuré, vérification ajoutée, décision mieux expliquée ou autonomie accrue. Une personne déjà compétente au départ peut démontrer sa progression par un travail plus approfondi, de meilleures vérifications ou une justification plus précise.
+| Numéro de critère | Nombre de points | Nom                                 | Description                                                                                       | Comment vérifier                                                                                  |
+|-------------------|-----------------:|-------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| D1                |                8 | Fonctionnalité montrée et évolution | Le groupe démontre des fonctionnalités concrètes et montre que le projet évolue entre les démos.  | Observer les démos et vérifier que le site progresse de manière visible d'une démo à l'autre.     |
+| D2                |                8 | Explication des choix               | Le groupe explique clairement ses choix de conception, de structure et de style.                  | Écouter les explications et vérifier que les justifications sont claires et pertinentes.          |
+| D3                |                6 | Compréhension des concepts          | Le groupe montre qu'il comprend les concepts du cours (HTML sémantique, CSS, responsive, etc.).   | Poser des questions sur le code et vérifier que les réponses montrent une compréhension réelle.   |
+| D4                |                6 | Diagnostic et correction            | Le groupe identifie ses blocages, propose des solutions et applique les corrections suggérées.    | Observer comment le groupe réagit face aux problèmes et aux suggestions du professeur.            |
+| D5                |                7 | Progression entre les démos         | Le groupe montre une progression continue et une amélioration visible du projet au fil des jours. | Comparer les démos successives et vérifier que les retours sont intégrés et que le projet avance. |
 
-**Conseil de suivi :** tenir une fiche par groupe pour B2 et une fiche par apprenant pour B1, avec une ligne par date : critère observé, niveau, exemple ou citation courte. Cette trace rend la note plus facile à justifier et limite le poids d’une impression générale en fin de semaine.
+## Évaluation en individuel (25% de la note totale)
+
+**Repères de niveau**
+
+- **0 — Pas de preuve observée**
+- **1 — Compréhension très fragile, même avec aide**
+- **2 — Compréhension partielle ; la personne avance avec des indications**
+- **3 — Réponse ou démarche appropriée de façon autonome**
+- **4 — Explication claire, raisonnement solide ou transfert pertinent à une autre situation**
+
+L'évaluation individuelle porte sur la maîtrise personnelle des concepts du cours, observée pendant les démos et par des questions posées à chaque étudiant. Pour chaque critère, le professeur attribue un niveau de 0 à 4, puis calcule : **points obtenus = maximum du critère × niveau ÷ 4**. Des demi-points peuvent être utilisés.
+
+Les évaluations individuelles sont réparties sur les Jours 2 à 4 : la partie « Question individuelle » de chaque démo (2 min) sert de base, complétée par des entretiens plus longs si nécessaire. Cela permet de ne pas concentrer toutes les évaluations le dernier jour.
+
+| Numéro de critère | Nombre de points | Nom                                      | Description                                                                                      | Comment vérifier                                                                                  |
+|-------------------|-----------------:|------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| I1                |                7 | Expliquer un choix réalisé par le groupe | L'étudiant explique clairement un choix technique ou de conception qu'il a contribué à faire.    | Poser des questions ciblées sur le code et vérifier que l'explication est précise et personnelle. |
+| I2                |                5 | Mobiliser un concept du cours            | L'étudiant utilise correctement un concept vu en cours (HTML sémantique, CSS, responsive, etc.). | Demander de définir ou d'illustrer un concept et vérifier la justesse de la réponse.              |
+| I3                |                5 | Analyser et corriger un problème         | L'étudiant identifie la cause d'un bug ou d'un problème et propose une correction pertinente.    | Présenter un problème concret et observer la démarche de diagnostic et de résolution.             |
+| I4                |                3 | Contribution et progression personnelle  | L'étudiant a participé activement au projet et montre une progression visible.                   | Examiner l'historique Git et les retours des membres du groupe.                                   |
+| I5                |                5 | Progression individuelle                 | L'étudiant montre une amélioration de ses compétences entre le début et la fin du projet.        | Comparer les premières et dernières démos et vérifier que les lacunes initiales sont comblées.    |
+
+> [!important]
+> Les évaluations individuelles se font progressivement sur les Jours 2 à 4.
+> Si vous avez des contraintes d'absence, signalez-le au prof pour que votre évaluation
+> se fasse avant votre absence.

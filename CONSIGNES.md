@@ -66,12 +66,12 @@
 
 ### Accessibilité et affichage adaptatif (10 points)
 
-| Critère                      | Max. | Niveau (0-4) | Points | Observations |
-|------------------------------|------|--------------|--------|--------------|
-| A1 — Responsive et adaptatif | 4    |              |        |              |
-| A2 — Media queries           | 3    |              |        |              |
-| A3 — Approche mobile first   | 2    |              |        |              |
-| A4 — Lisibilité des couleurs | 1    |              |        |              |
+| Numéro de critère | Nombre de points | Nom                     | Description                                                                                                                                                                        | Comment vérifier                                                                                                                                               |
+|-------------------|-----------------:|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| A1                |                4 | Responsive et adaptatif | Le contenu s’adapte aux différentes largeurs d’écran sans perte d’information, s’affiche correctement à 350 × 650 px sans défilement horizontal et reste utilisable au zoom 200 %. | Tester les pages sur petit et grand écran, à 350 × 650 px et au zoom 200 %, et vérifier que tout le contenu et toutes les fonctionnalités restent accessibles. |
+| A2                |                3 | Media queries           | Le CSS utilise des media queries pour adapter la mise en page à différentes largeurs d'écran.                                                                                      | Rechercher `@media` dans le CSS et vérifier qu'au moins une media query est présente et fonctionnelle.                                                         |
+| A3                |                2 | Approche mobile first   | Le CSS prévoit d’abord une mise en page pour petit écran, puis des adaptations pour les écrans plus larges.                                                                        | Examiner la feuille CSS et vérifier que les règles de base ciblent les petits écrans et que les adaptations plus larges sont ajoutées ensuite.                 |
+| A4                |                1 | Lisibilité des couleurs | Les couleurs de texte et de fond offrent un contraste suffisant pour une lecture confortable sur toutes les pages.                                                                  | Vérifier avec le color picker des DevTools Chrome ou l'extension « WCAG Color Contrast Checker ».                                                                       |
 
 ### Éco-conception (3 points)
 

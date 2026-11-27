@@ -2,7 +2,7 @@
 title: Consignes
 ---
 
-# Projets de groupe
+## Projets de groupe
 
 - **Durée** : 4 jours
 - **Groupes** : 3-4 personnes

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Consignes
+---
+
 # Projets de groupe
 
 - **Durée** : 4 jours

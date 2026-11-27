@@ -10,9 +10,10 @@
   <header>
 
     <nav>
-      <a href="/">Accueil</a>
-      <a href="/CONSIGNES/">Consignes</a>
-      <a href="/contact/">Contact</a>
+      <!-- Jekyll apporte une syntaxe supplémentaires pour faire des petites transformations -->
+      <a href="{{ '/' | relative_url }}">Accueil</a>
+      <a href="{{ '/CONSIGNES' | relative_url }}">Consignes</a>
+      <a href="{{ '/contact' | relative_url }}">Contact</a>
     </nav>
 
   </header>
